@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
-//= require ./lib/backbone-min
+//= require handlebars.runtime
 //= require ./lib/underscore-min
+//= require ./lib/backbone-min
 //= require ./app/buggy
