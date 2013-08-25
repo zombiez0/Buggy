@@ -6,4 +6,9 @@ class App.Views.Content extends Backbone.View
 
 	render : ->
 		@$el.html(@template())
+		@renderEmptyView()
 		@
+
+	renderEmptyView : ->
+		emptyView = new App.Views.Empty()
+		@$('#main-area').html(emptyView.render().el)		
