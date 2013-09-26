@@ -7,8 +7,13 @@ class App.Views.Content extends Backbone.View
 	render : ->
 		@$el.html(@template())
 		@renderEmptyView()
+		@renderProjectsView()
 		@
 
 	renderEmptyView : ->
 		emptyView = new App.Views.Empty()
-		@$('#main-area').html(emptyView.render().el)		
+		@$('#main-area').html(emptyView.render().el)
+
+	renderProjectsView : ->
+		projectsView = new App.Views.Projects()
+		@$('#sidebar-main').html(projectsView.render().el)			
